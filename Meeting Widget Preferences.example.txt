@@ -1,0 +1,98 @@
+﻿# Meeting Widget Preferences
+#
+# Keep this file in the same folder as the AHK or EXE.
+# Change values, save the file, then use Gear > Restart this widget.
+# Boolean values: true or false
+
+
+# Leave any Hidden... value blank to hide nothing in that category.
+
+[General]
+# Start with Windows is managed in Settings > General. It creates or removes a
+# shortcut in the current user's Windows Startup folder.
+
+
+
+[Meeting Visibility]
+# Choose the options to HIDE
+# Status options: cancelled, expired, all_day
+MainHiddenStatuses=all_day,cancelled,expired
+PopupHiddenStatuses=all_day,cancelled,expired
+#
+# Response (RSVP) options: not_responded, tentative, accepted, declined, organizer, none
+# Note: "organizer" means you are the organizer of the meeting, normally this would NOT be hidden
+MainHiddenResponses=declined,none,not_responded
+PopupHiddenResponses=declined,none,not_responded
+#
+# Availability (Show As) options: free, tentative, busy, oof, working_elsewhere
+MainHiddenAvailability=free
+PopupHiddenAvailability=free
+#
+MainOutlookRestrictFilter=
+PopupOutlookRestrictFilter=
+
+[Appearance]
+Background=#000000
+TextColor=#FFB000
+SecondaryTextColor=#C09200
+NextTimeColor=#BF4E14
+HoverBackground=#FFB000
+HoverTextColor=#000000
+SeparatorColor=#7A5400
+GearColor=#D0D0D0
+DisabledTextColor=#4D3A00
+
+[Borders]
+MainBorderColor=#FFB000
+MainBorderWidth=1
+
+[Fonts]
+FontFamily=Segoe UI
+TimeSize=9
+TimeStyle=bold
+CountdownSize=8
+CountdownStyle=normal
+TitleSize=8
+TitleStyle=normal
+LocationSize=8
+LocationStyle=normal
+NextSize=7
+NextStyle=normal
+GearFontFamily=Segoe UI Symbol
+GearSize=12
+GearStyle=normal
+
+[Logging]
+Enabled=false
+MaxKB=256
+
+[Main Window]
+TextChars=29
+Anchor=right
+HorizontalOffset=185
+VerticalOffset=0
+AllowDrag=true
+SavePosition=true
+SnapToTaskbar=true
+SnapToTopEdge=true
+SnapDistancePx=20
+ShowCountdown=true
+ShowNextMeetingTime=true
+PromoteNextAfterActiveMinutes=10
+
+[Popup]
+MeetingCount=4
+OpenOnHover=true
+OpenOnClick=true
+HoverDelayMs=300
+CloseDelayMs=450
+
+[Refresh]
+UseOutlookEvents=true
+ChangeDebounceSeconds=2
+SafetyRefreshMinutes=15
+FallbackPollSeconds=60
+RetryAfterErrorSeconds=60
+LookaheadDays=30
+MaxMeetingsToScan=60
+KeepOnTopIntervalMs=250
